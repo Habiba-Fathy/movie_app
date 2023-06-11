@@ -87,16 +87,22 @@ class _MovieDetailsScreenState extends State<MovieDetailsScreen> {
                     ],
                   ),
                   50.ph,
-                  Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 16.0),
-                    child: Text(
-                      'Tuesday',
-                      style:
-                          Theme.of(context).textTheme.headlineMedium?.copyWith(
+                  Row(
+                    children: [
+                      Padding(
+                        padding: const EdgeInsets.symmetric(horizontal: 16.0),
+                        child: Text(
+                          'Tuesday',
+                          style: Theme.of(context)
+                              .textTheme
+                              .headlineMedium
+                              ?.copyWith(
                                 fontSize: 32,
                                 fontWeight: FontWeight.w400,
                               ),
-                    ),
+                        ),
+                      ),
+                    ],
                   ),
                   22.ph,
                   Padding(
