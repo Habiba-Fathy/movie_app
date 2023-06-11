@@ -13,6 +13,7 @@ class Assets {
   static const String svgHome = 'assets/svg/home.svg';
   static const String svgMovieNight = 'assets/svg/movie_night.svg';
   static const String svgNews = 'assets/svg/news.svg';
+  static const String svgPlay = 'assets/svg/play.svg';
   static const String svgProfile = 'assets/svg/profile.svg';
   static const String svgSearch = 'assets/svg/search.svg';
   static const String svgSettings = 'assets/svg/settings.svg';
