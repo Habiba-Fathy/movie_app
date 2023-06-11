@@ -4,13 +4,13 @@ class MovieTheme {
   static getLightTheme(String langCode) {
     return ThemeData(
       scaffoldBackgroundColor: Colors.white,
-      backgroundColor: const Color(0xFFF6F6F6),
-      dividerColor: const Color(0xFFC1C1C1),
+      dividerColor: const Color(0xFFD9D9D9),
       brightness: Brightness.light,
       shadowColor: Colors.black,
       primaryColor: const Color(0xFFE4897B),
       colorScheme: const ColorScheme.light(
         primary: Color(0xFFFF725E),
+        secondary: Color(0xFF806815),
       ),
       fontFamily: getFontFamily(langCode),
       textTheme: TextTheme(
@@ -32,6 +32,10 @@ class MovieTheme {
         ),
         displayMedium: TextStyle(
           color: const Color(0xFFFFC8C8),
+          height: getDefaultFontHeight(langCode),
+        ),
+        displaySmall: TextStyle(
+          color: const Color(0xFF806815),
           height: getDefaultFontHeight(langCode),
         ),
       ),

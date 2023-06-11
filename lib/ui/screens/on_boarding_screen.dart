@@ -1,8 +1,10 @@
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:dots_indicator/dots_indicator.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:movie/models/on_boarding_model.dart';
+import 'package:movie/ui/screens/nav_screen.dart';
 import 'package:movie/utils/extensions/extensions.dart';
 import 'package:movie/utils/utils.dart';
 
@@ -35,10 +37,24 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
   next() {
     if (_indicatorIndex != 2) {
       _buttonCarouselController.nextPage();
+    } else {
+      Navigator.pushAndRemoveUntil(
+          context,
+          CupertinoPageRoute(
+            builder: (context) => const NavScreen(),
+          ),
+          (route) => false);
     }
   }
 
-  skip() {}
+  skip() {
+    Navigator.pushAndRemoveUntil(
+        context,
+        CupertinoPageRoute(
+          builder: (context) => const NavScreen(),
+        ),
+        (route) => false);
+  }
 
   @override
   Widget build(BuildContext context) {

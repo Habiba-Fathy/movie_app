@@ -2,10 +2,19 @@
 class Assets {
   Assets._();
 
+  static const String imagesFilm = 'assets/images/film.png';
   static const String imagesImage = 'assets/images/image.png';
+  static const String imagesImage2 = 'assets/images/image2.png';
   static const String polyPolyRegular = 'assets/fonts/poly/Poly-Regular.ttf';
   static const String svgBack = 'assets/svg/back.svg';
+  static const String svgFavourite = 'assets/svg/favourite.svg';
   static const String svgFilmRoll = 'assets/svg/film_roll.svg';
+  static const String svgFilter = 'assets/svg/filter.svg';
+  static const String svgHome = 'assets/svg/home.svg';
   static const String svgMovieNight = 'assets/svg/movie_night.svg';
   static const String svgNews = 'assets/svg/news.svg';
+  static const String svgProfile = 'assets/svg/profile.svg';
+  static const String svgSearch = 'assets/svg/search.svg';
+  static const String svgSettings = 'assets/svg/settings.svg';
+  static const String svgStarBroken = 'assets/svg/star_broken.svg';
 }
