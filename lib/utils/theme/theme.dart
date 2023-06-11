@@ -10,7 +10,7 @@ class MovieTheme {
       shadowColor: Colors.black,
       primaryColor: const Color(0xFFE4897B),
       colorScheme: const ColorScheme.light(
-        primary: Color(0xFF1F3261),
+        primary: Color(0xFFFF725E),
       ),
       fontFamily: getFontFamily(langCode),
       textTheme: TextTheme(

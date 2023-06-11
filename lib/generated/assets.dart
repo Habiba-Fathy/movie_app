@@ -4,5 +4,8 @@ class Assets {
 
   static const String imagesImage = 'assets/images/image.png';
   static const String polyPolyRegular = 'assets/fonts/poly/Poly-Regular.ttf';
+  static const String svgBack = 'assets/svg/back.svg';
   static const String svgFilmRoll = 'assets/svg/film_roll.svg';
+  static const String svgMovieNight = 'assets/svg/movie_night.svg';
+  static const String svgNews = 'assets/svg/news.svg';
 }

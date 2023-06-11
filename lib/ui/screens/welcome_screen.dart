@@ -1,4 +1,6 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:movie/ui/screens/on_boarding_screen.dart';
 import 'package:movie/utils/extensions/extensions.dart';
 
 class WelcomeScreen extends StatelessWidget {
@@ -93,7 +95,12 @@ class WelcomeScreen extends StatelessWidget {
                 ),
                 90.ph,
                 InkWell(
-                  onTap: () {},
+                  onTap: () => Navigator.push(
+                    context,
+                    CupertinoPageRoute(
+                      builder: (context) => const OnBoardingScreen(),
+                    ),
+                  ),
                   child: Container(
                     padding: const EdgeInsets.symmetric(
                         horizontal: 45, vertical: 14),
